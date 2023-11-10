@@ -1,0 +1,14 @@
+.css-1uly9zn-MuiPaper-root {
+  margin-bottom: 10px;
+}
+.buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy__title {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}

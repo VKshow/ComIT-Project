@@ -1,0 +1,37 @@
+a {
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #297cbb;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+nav ul {
+  margin-top: 16px;
+  width: 60%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+nav a:hover {
+  color: orange;
+}
+
+.menu__logo {
+  width: 80px;
+}

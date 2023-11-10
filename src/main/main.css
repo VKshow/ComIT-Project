@@ -1,0 +1,16 @@
+.main {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
