@@ -10,7 +10,7 @@ const About = () => {
       </p>
       <img
         className="about__img"
-        src="https://lh3.googleusercontent.com/p/AF1QipPA8pe7jkB4ofEAys69XN6QgXfsxa5wLFF6vCKi=w1080-h608-p-no-v0"
+        src="https://www.canadream.com/Website/media/Images/RV%20Rentals/Midi%20Motorhome%20MHB/MHB-2_mini.jpg?ext=.jpg"
         alt="img about"
       />
       <p className="about__text">
