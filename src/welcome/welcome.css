@@ -2,6 +2,16 @@
   width: 100%;
   animation: fadeInOut ease 4s;
 }
+.mainImg {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mainImg img {
+  width: 100%;
+  object-fit: none;
+}
 
 @keyframes fadeInOut {
   0% {

@@ -1,7 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
+
+import "./app.css";
 
 import Welcome from "../welcome/Welcome";
 import Main from "../main/Main";
+
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -10,10 +13,11 @@ const App = () => {
 
   return (
     <>
-      {isVisible && <Welcome updateVisibility={changeVisibility} />}
+      {isVisible &&  <Welcome updateVisibility={changeVisibility} />}
       {!isVisible && <Main />}
     </>
   );
 };
 
 export default App;
+// 

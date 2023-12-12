@@ -17,7 +17,8 @@ const Welcome = ({ updateVisibility }) => {
     <div className="mainImg">
       <img
         className="mainTitle"
-        src="https://myvancity.ca/wp-content/uploads/2021/02/canadream.jpg"
+        alt="mainTitle"
+        src="https://trumpwallpapers.com/wp-content/uploads/Marvel-Wallpaper-04-3840-x-2160.jpg"
       />
     </div>
   );

@@ -1,12 +1,11 @@
-import { BrowserRouter as Router, Route, Routes, Link, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import "./menu.css";
 
 import Home from "../home/Home";
-import Rent from "../rent/Rent";
-import Buy from "../buy/Buy";
-import About from "../about/About";
-import NotFound from "./NotFound";
+import Info from "../info/Info";
+import Chat from "../chat/Chat";
+import Game from "../game/Game";
 
 const Menu = () => {
   return (
@@ -15,7 +14,7 @@ const Menu = () => {
         <nav>
           <img
             className="menu__logo"
-            src="https://www.der-kanadaspezialist.de/de-wAssets/img/produkte/Canadream/weblication/wThumbnails/canadream-logo-81007393-924f645a@688ll.png"
+            src="https://i.ytimg.com/vi/r2UnTYjfhxA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDn6TYB2UQmZ9SdZQczVW8LJ_-FcA"
             alt="logo"
           />
           <ul>
@@ -23,26 +22,22 @@ const Menu = () => {
               <Link to="/">HOME</Link>
             </li>
             <li>
-              <Link to="/rent">RENT RV</Link>
+              <Link to="/info">INFO</Link>
             </li>
             <li>
-              <Link to="/buy">BUY RV</Link>
+              <Link to="/chat">CHAT</Link>
             </li>
             <li>
-              <Link to="/about">ABOUT US</Link>
+              <Link to="/game">GAME</Link>
             </li>
           </ul>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/rent" element={<Rent />} />
-          <Route path="/buy" element={<Buy />} />
-          <Route path="/about" element={<About />} />
-          {/* catch if the path is wrong */}
-
-          <Route path="*" element={<Navigate to="/not-found" />} />
-          <Route path="/not-found" element={<NotFound />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
       </Router>
     </>

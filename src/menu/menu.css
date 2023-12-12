@@ -8,13 +8,12 @@ nav {
   justify-content: center;
   align-items: center;
 
-  background: #297cbb;
+  background: rgb(0, 0, 0);
   position: sticky;
   top: 0;
   z-index: 9999;
 }
 nav ul {
-  margin-top: 16px;
   width: 60%;
   display: flex;
   text-align: center;
