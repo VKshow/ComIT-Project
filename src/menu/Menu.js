@@ -1,13 +1,24 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import React, { useState } from "react";
 
 import "./menu.css";
+import '../chat/chat.css'
 
 import Home from "../home/Home";
 import Info from "../info/Info";
-import Chat from "../chat/Chat";
+
+import Login from "../chat/page/Login";
+import Signup from "../chat/page/Signup";
+import ChatHome from "../chat/page/ChatHome";
 import Game from "../game/Game";
 
 const Menu = () => {
+
+  const [userEmail, setUserEmail] = useState('');
+
+  const sendEmailToParent = (email) => {
+    setUserEmail(email);
+  };
   return (
     <>
       <Router>
@@ -25,7 +36,7 @@ const Menu = () => {
               <Link to="/info">INFO</Link>
             </li>
             <li>
-              <Link to="/chat">CHAT</Link>
+              <Link to="/chatHome">CHAT</Link>
             </li>
             <li>
               <Link to="/game">GAME</Link>
@@ -36,7 +47,9 @@ const Menu = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/info" element={<Info />} />
-          <Route path="/chat" element={<Chat />} />
+          <Route path="/login" element={<Login sendEmailToParent={sendEmailToParent}/>} />
+          <Route path="/signup" element={<Signup sendEmailToParent={sendEmailToParent}/>} />
+          <Route path="/chatHome" element={<ChatHome userEmail={userEmail} sendEmailToParent={sendEmailToParent} />} />
           <Route path="/game" element={<Game />} />
         </Routes>
       </Router>

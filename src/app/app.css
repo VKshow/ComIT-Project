@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     cursor: url("./cursor.png"), auto; /* Changes the cursor to your custom image */
+    
   }
   body {
 
-    background: rgba(0, 0, 0, 0.528);
+    background: rgba(0, 0, 0, 0.696);
     height: 100%;
     /* overflow: hidden; */
   }

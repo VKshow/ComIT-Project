@@ -168,7 +168,7 @@ const Home = () => {
     <div ref={bgRef} className="home__main">
       <h1 className="home__main-title">MARVEL PORTAL</h1>
       <div className="home__main-group">
-        <Link className="home-link" to="/chat">
+        <Link className="home-link" to="/info">
           <img
             className="home-info-img"
             src="https://www.vhv.rs/dpng/f/230-2300252_transparent-marvel-heroes-png-marvel-super-heroes-png.png"
@@ -176,7 +176,7 @@ const Home = () => {
           />
           <div className="home-link-info">INFO - PORTAL</div>
         </Link>
-        <Link className="home-link" to="/info">
+        <Link className="home-link" to="/chatHome">
           <img
             className="home-chat-img"
             src="https://static.tumblr.com/798ab1c4f763a287e76530d4b01366de/udolmh0/RBkpf7sa9/tumblr_static_4hcyqr9gvmecg04wkgcsso40k.png"

@@ -1,6 +1,6 @@
 a {
     font-weight: 500;
-    color: #646cff;
+    color: #4501ba;
     text-decoration: none;
   }
   
@@ -11,7 +11,7 @@ a {
   
   
   h1 {
-    font-size: 3.2em;
+    font-size: 5.2em;
     line-height: 1.1;
   }
   
@@ -27,10 +27,7 @@ a {
     transition: 0.25s;
   }
   
-  button:hover {
-    border-color: #646cff;
-    color: #646cff;
-  }
+  
   
   button:focus,
   button:focus-visible {
@@ -38,6 +35,7 @@ a {
   }
   
   .login__main {
+    margin-top: 12%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -46,25 +44,30 @@ a {
   }
   
   .title span {
-    color: rgb(0, 166, 166);
+    color: rgb(203, 2, 2); /* Dark Red */
+}
+
+.login__title {
+  animation: moveUpDown 1.2s ease-in-out infinite;
+  color: #3498db; /* Dodger Blue */
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+      transform: translateY(0);
   }
-  
-  .login__title {
-    animation: pulse 3s ease-in-out infinite;
+  50% {
+      transform: translateY(-10px);
   }
-  
-  @keyframes pulse {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
+  50% {
+      transform: translateY(10px);
   }
+}
+
   
   .login__form {
     margin-top: 80px;
-    width: 510px;
+    width: 620px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -73,9 +76,10 @@ a {
   .login__mail,
   .login__password,
   .login__btn {
-    width: 100px;
-    height: 40px;
-    background-color: transparent;
+    width: 160px;
+    height: 60px;
+    background-color: #d2e5fa; /* Dodger Blue */
+
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.1), 0 0 60px rgba(0, 0, 0, 0.1);
     transition: box-shadow ease 0.25s;
@@ -85,11 +89,30 @@ a {
   .login__password:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px #646cff, 0 0 20px rgba(0, 0, 0, 0.1);
   }
+
+  .main{
+    position: relative;
+  }
+  .login-img{
+    position: absolute;
+    top: 25%;
+    left: 40px;
+    width: 420px;
+    object-fit: cover;
+    
+  }
+  .signup-img{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 220px;
+    object-fit: cover;
+  }
   
   .deep {
     border: none;
     outline: none;
-    background: transparent;
+    /* background: transparent; */
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -97,9 +120,9 @@ a {
   }
   
   .login__btn {
-    background-color: rgb(0, 166, 166);
-    color: #fff;
-    font-size: 16px;
+    background-color: #5ca1d0; 
+    color: #020202; 
+    font-size: 26px;
     text-align: center;
     padding: 10px;
     cursor: pointer;
@@ -107,9 +130,15 @@ a {
     justify-content: center;
     align-items: center;
   }
+
+  button:hover {
+    background: #2d86c1;
+    border-color: black;
+    color: black;
+  }
   
   .signup__btn {
-    background-color: rgb(166, 0, 97);
+    background-color: rgb(217, 177, 1);
   }
   
   .signup__btn:hover {
@@ -135,17 +164,21 @@ a {
   }
   
   .signup__title span {
-    color: rgb(166, 0, 97);
+    color: rgb(212, 194, 2);
   }
   
   .signup__input:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgb(166, 0, 97), 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgb(166, 152, 0), 0 0 20px rgba(0, 0, 0, 0.1);
   }
   
   /* message window */
   
   .chat__section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .message__window {
@@ -153,8 +186,8 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 30px;
-    width: 943px;
+    margin-top: 60px;
+    width: 1100px;
     height: 380px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -205,12 +238,13 @@ a {
   }
   
   .nickname {
-    font-size: 10px;
+    font-size: 18px;
   }
   
   .message__input {
     margin-top: 30px;
-    width: 70%;
+    width: 800px;
+    height: 60px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -224,8 +258,16 @@ a {
     border-color: #007BFF;
   }
   
-  .message__btn {
-    margin-top: 20px;
+  .chat-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #message__btn {
+    width: 200px;
+    margin-top: 30px;
     background-color: #007BFF;
     color: #fff;
     padding: 10px 20px;
@@ -237,7 +279,7 @@ a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
   }
   
-  .message__btn:hover {
+  #message__btn:hover {
     background-color: #0056b3;
     color: white;
   }
@@ -254,26 +296,23 @@ a {
   }
   
   .logout-btn:hover {
-    background-color: #c9302c;
+    background-color: #fd0800;
     color: white;
   }
   
   .chat-header {
+    padding: 15px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .header-img {
-    width: 6%;
+  .chat-text-header{
+    font-size: 30px;
+    color: #ffffff;
   }
   
-  .header-img img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-  }
+  
   
   @media (prefers-color-scheme: light) {
     :root {
@@ -303,3 +342,9 @@ a {
     background:#0066ff6e;
   }
   
+
+  .signUp-text{
+    margin-top: 80px;
+    font-size: 30px;
+    color: #c2c0c0;
+  }
