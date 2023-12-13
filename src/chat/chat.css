@@ -1,0 +1,305 @@
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #535bf2;
+  }
+  
+  
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 3px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #bfbfbf;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  
+  button:hover {
+    border-color: #646cff;
+    color: #646cff;
+  }
+  
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  .login__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title span {
+    color: rgb(0, 166, 166);
+  }
+  
+  .login__title {
+    animation: pulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .login__form {
+    margin-top: 80px;
+    width: 510px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .login__mail,
+  .login__password,
+  .login__btn {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.1), 0 0 60px rgba(0, 0, 0, 0.1);
+    transition: box-shadow ease 0.25s;
+  }
+  
+  .login__mail:hover,
+  .login__password:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px #646cff, 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .deep {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .login__btn {
+    background-color: rgb(0, 166, 166);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup__btn {
+    background-color: rgb(166, 0, 97);
+  }
+  
+  .signup__btn:hover {
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+  }
+  
+  .login__link {
+    margin-top: 40px;
+  }
+  
+  .signup__title {
+    animation: moveSideToSide 2s ease-in-out infinite;
+  }
+  
+  @keyframes moveSideToSide {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(15px);
+    }
+  }
+  
+  .signup__title span {
+    color: rgb(166, 0, 97);
+  }
+  
+  .signup__input:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgb(166, 0, 97), 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* message window */
+  
+  .chat__section {
+    width: 100%;
+  }
+  
+  .message__window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 943px;
+    height: 380px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0, #f5f5f5);
+    -webkit-box-shadow: inset 5px 2px 11px 2px rgba(0, 0, 0, 0.23);
+    box-shadow: inset 5px 2px 11px 2px rgba(0, 0, 0, 0.23);
+  }
+  
+  .message__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .message {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message__ava {
+    background: #f0f0f0;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    border: 2px solid #007BFF;
+    border-radius: 15px;
+  }
+  
+  .message__ava img {
+    width: 35%;
+    object-fit: contain;
+  }
+  
+  .message__text {
+    padding: 8px;
+  }
+  
+  .nickname {
+    font-size: 10px;
+  }
+  
+  .message__input {
+    margin-top: 30px;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message__input:focus {
+    border-color: #007BFF;
+  }
+  
+  .message__btn {
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message__btn:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .logout-btn {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c9302c;
+    color: white;
+  }
+  
+  .chat-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-img {
+    width: 6%;
+  }
+  
+  .header-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  .message__date{
+    position: absolute;
+    top:3px;
+    right: 7px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.738);
+  }
+  .error-login{
+    margin-top: 20px;
+    color: red;
+  }
+  .my-message{
+    margin-left: 170px;
+    background:#0066ff6e;
+  }
+  

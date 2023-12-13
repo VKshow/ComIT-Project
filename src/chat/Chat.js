@@ -1,7 +1,10 @@
-import "./chat.css";
-
 const Chat = () => {
-  return "chat";
-};
+
+  return (
+    <>
+      <h1>Chat</h1>
+    </>
+  );
+}
 
 export default Chat;
