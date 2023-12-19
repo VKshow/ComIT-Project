@@ -1,4 +1,6 @@
-import './info.css';
+import App from './components/app/App';
+
+import './style/style.scss';
 
 
 
@@ -8,7 +10,7 @@ const Info = () => {
   
 
   return (
-    <div>Info</div>
+    <App />
   );
 };
 
