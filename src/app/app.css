@@ -7,7 +7,8 @@
   }
   body {
 
-    background: rgba(0, 0, 0, 0.696);
+    /* background: rgba(0, 0, 0, 0.696); */
+    background: linear-gradient(to right, #000041, #000061);
     height: 100%;
     /* overflow: hidden; */
   }
