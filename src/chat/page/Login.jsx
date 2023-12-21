@@ -76,7 +76,7 @@ const Login = ({sendEmailToParent}) => {
             </form>
 
             <p className="text-sm text-white text-center signUp-text login__link">
-              <strong>No account yet?</strong> <NavLink to="/signup"><strong>Sign up</strong></NavLink>
+              <strong>No account yet?</strong> <NavLink  to="/signup"><div className="navlink">Sign up</div></NavLink>
             </p>
 
             {logError && <ErrorMessage/>}
