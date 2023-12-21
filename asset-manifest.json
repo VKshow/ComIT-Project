@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ComIT-Project/static/css/main.b66d2591.css",
+    "main.js": "/ComIT-Project/static/js/main.fb380dda.js",
+    "static/media/game-bg.png": "/ComIT-Project/static/media/game-bg.8d796e9db47e8df72001.png",
+    "static/media/error.gif": "/ComIT-Project/static/media/error.230ea92c257c0def603a.gif",
+    "static/media/mouse.png": "/ComIT-Project/static/media/mouse.279f16266b8d3dae481a.png",
+    "static/media/char.gif": "/ComIT-Project/static/media/char.461b54de38d679950a36.gif",
+    "static/media/vision.png": "/ComIT-Project/static/media/vision.067d4ae1936d64a577ce.png",
+    "static/media/enemy.gif": "/ComIT-Project/static/media/enemy.d268481312fc90217c91.gif",
+    "static/media/mjolnir.png": "/ComIT-Project/static/media/mjolnir.61f31e1809f12183a524.png",
+    "static/media/Avengers.png": "/ComIT-Project/static/media/Avengers.4065c8f9c94e3d8b039a.png",
+    "static/media/arrow.png": "/ComIT-Project/static/media/arrow.5e657ccc52265cc5ae03.png",
+    "static/media/Avengers_logo.png": "/ComIT-Project/static/media/Avengers_logo.9eaf219344d83362e830.png",
+    "index.html": "/ComIT-Project/index.html",
+    "main.b66d2591.css.map": "/ComIT-Project/static/css/main.b66d2591.css.map",
+    "main.fb380dda.js.map": "/ComIT-Project/static/js/main.fb380dda.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b66d2591.css",
+    "static/js/main.fb380dda.js"
+  ]
+}
