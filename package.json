@@ -2,7 +2,7 @@
   "name": "canadream",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vkshow.github.io/ComIT-Project/",
+  "homepage": "https://vkshow.github.io/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
